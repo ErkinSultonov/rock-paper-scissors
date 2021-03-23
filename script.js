@@ -26,12 +26,12 @@ $(document).ready(function () {
         }
         else if(sec > 0 && $('.timer').attr('what') == 'you'){
             clearInterval(timer);
-            $('.w-text').append('Congratulations you won the bot by a score of <span>'+ scoreBot + ':' + scoreHuman + '</span>')
+            $('.w-text').append('Congratulations you won the bot. Score: <span>'+ scoreBot + ':' + scoreHuman + '</span>')
             $('.top').append('<img src="img/source.gif" alt="">')
         }
         else if(sec > 0 && $('.timer').attr('what') == 'bot'){
             clearInterval(timer);
-            $('.w-text').append('Unfortunately the bot defeated you with the score of <span>'+ scoreBot + ':' + scoreHuman + '</span>')
+            $('.w-text').append('Unfortunately the bot defeated you. Score: <span>'+ scoreBot + ':' + scoreHuman + '</span>')
             $('.top').append('<img src="img/lose.gif" alt="">')
         }
         }, 1000);
